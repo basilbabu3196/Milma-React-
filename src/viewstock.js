@@ -16,7 +16,10 @@ componentDidMount(){
     console.log(response);
     this.setState({ usersCollection: response.data.stock });
   
-  })
+  }).catch(error=>{
+    alert("please login")
+    this.history.push("")
+})
 }
 dataTable() {
   // return this.state.usersCollection?.map((data, i) => {
@@ -27,6 +30,7 @@ dataTable() {
 render(){
 const userdetails=this.state.usersCollection
   return (<div><Home></Home>
+  <div className="spa">
     <div className="wrapper-users">
       <center><h3 className="p-3 mb-2 bg-light text-success">STOCK DETAILS</h3></center>
         <div className="container">
@@ -46,6 +50,7 @@ const userdetails=this.state.usersCollection
                 </tbody>
             </table>
         </div>
+    </div>
     </div>
     </div>
 )

@@ -1,7 +1,8 @@
 import axios from 'axios';
 const baseUrl = "http://localhost:8000"
 
-
+                                      
+                                            // L O G I N
 const login = (data) => {
    
     return axios.post(baseUrl+"/login",data,{
@@ -10,33 +11,28 @@ const login = (data) => {
     })
 }
 
+
+
+
+                                           //R e g i s t e r   a n d   U p d a t e   U S E R
 const register = (data) => {
     
     return axios.post(baseUrl+"/register",data, {
          withCredentials: true
      })
  }
-//  const getuser = (data) => {
+
+ const editprofile = (data) => {
     
-//     return axios.get(baseUrl+"/getuser",data, {
-//          withCredentials: true
-//      })
-//  }
- const stock = (data1) => {
-    
-    return axios.post(baseUrl+"/stock",data1, {
+    return axios.put(baseUrl+"/editprofile",data, {
          withCredentials: true
      })
  }
 
- 
-//  const getuser = (data1) => {
-    
-//     return axios.get(baseUrl+"/getuser",data1, {
-//          withCredentials: true
-//      })
-//  }
 
+   
+ 
+                                                    //p u r c h a s e
  const purchase = (data) => {
     
     return axios.post(baseUrl+"/purchase",data, {
@@ -44,26 +40,65 @@ const register = (data) => {
      })
  }
 
- 
 
+
+ const editpurchase = (data) => {
+    
+    return axios.put(baseUrl+"/editpurchase",data, {
+         withCredentials: true
+     })
+ }
+
+
+
+ const resetstockpur = (data) => {
+    
+    return axios.post(baseUrl+"/resetstockpur",data, {
+        withCredentials: true
+    })
+}
+
+
+
+                                                        //S A L E S
  const sales = (data) => {
     
     return axios.post(baseUrl+"/sales",data, {
          withCredentials: true
      })
  }
- 
-// const deposite = (data) => {
-//     return axios.post(baseUrl + "/deposite",data, {
-//         withCredentials: true
-//     })
-// }
 
-// const withdraw = (data) => {
-//     return axios.post(baseUrl + "/withdraw",data, {
-//         withCredentials: true
-//     })
-// }
+ const editsales = (data) => {
+    
+    return axios.put(baseUrl+"/editsales",data, {
+         withCredentials: true
+     })
+ }
+
+
+
+
+ const resetstocksale= (data) => {
+    
+    return axios.post(baseUrl+"/resetstocksale",data, {
+        withCredentials: true
+    })
+}
+
+
+                                                         // S  T O C K
+ const stock = (data1) => {
+    
+    return axios.post(baseUrl+"/stock",data1, {
+         withCredentials: true
+     })
+ }
+
+
+
+ 
+ 
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export default{
     login,
@@ -71,6 +106,11 @@ export default{
     stock,
     sales,
     register,
+    resetstockpur,
+    resetstocksale,
+    editprofile,
+    editpurchase,
+    editsales
    // getuser
 
 }

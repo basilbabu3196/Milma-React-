@@ -1,0 +1,95 @@
+.bdy
+{   position: fixed;
+    top: 0px;
+    left: 0px;
+    
+    width: 1400px;
+    height: 762px;
+}
+.head{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    flex-wrap: wrap;
+     justify-content: end; 
+    background-color: rgba(201, 201, 201, 0.274);
+}
+
+.navigator{
+  
+    padding: 30px;
+    font-weight: 600;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.navigator:hover{
+    background-color: rgba(40, 185, 185, 0.308);
+}
+.navigator:checked
+{
+    background-color: rgb(15, 255, 47);
+}
+
+.but
+{
+    background-color: rgba(165, 42, 42, 0);
+    color: rgb(255, 94, 94);
+    
+    margin: 1px;
+    float: right;
+    font-weight: bold;
+    
+    padding: 30px;
+}
+.but:hover
+{
+    background-color: crimson;
+}
+.navigat
+{
+    position: fixed;
+    left: 0px;
+    text-align: center;
+    color: rgb(255, 168, 7);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 20px;
+}
+.text1
+{
+    position: fixed;
+    top: 30px;
+    color: rgb(145, 93, 51);
+}
+
+a{
+    text-decoration: none;
+    color:rgb(167, 0, 182);
+}
+a:hover
+{
+    color: cadetblue;
+}
+a:active
+{
+    color: darkorchid;
+}
+.spa
+{
+    position: fixed;
+    top: 160px;
+    width: 100%;
+color:rgb(255, 255, 255);
+}
+.wel{
+    position: fixed;
+    top: 100px;
+    width: 100%;
+color:rgb(209, 209, 209);
+}

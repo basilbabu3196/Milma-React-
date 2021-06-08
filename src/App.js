@@ -10,8 +10,13 @@ import Registration from './Registration'
  import viewpurchase from './viewpurchase'
  import viewsales from './viewsales'
  import viewuser from './viewuser'
- import header from './homee'
- import Demo from './demo'
+ import Dashboard from './dashboard'
+ import validate from './validate'
+ import ome from './ome'
+//  import Modal from './modal.js';
+//  import homee from './homee'
+ import demo from './demo'
+ import Datatable from './DataTable'
 import {
   BrowserRouter,
   Switch,
@@ -29,13 +34,19 @@ function App() {
 
    
     <Switch>
-     <Route path="/home" component={home}>
+     <Route path="/dashboard" component={Dashboard}>
+
+</Route> 
+<Route path="/home" component={home}>
+
+</Route> 
+<Route path="/validate" component={validate}>
 
 </Route> 
       <Route path="/Registration" component={Registration}>
 
 </Route>
-<Route path="/demo" component={Demo}>
+<Route path="/demo" component={demo}>
 
 </Route>
 <Route path="/viewuser" component={viewuser}>
@@ -61,10 +72,13 @@ function App() {
       <Route path="/" component={LoginFunctions}>
 
 </Route>
-
-      <Route path="/header"  component={header}>
+<Route path="/ome" component={ome}>
 
 </Route>
+
+      {/* <Route path="/homee"  component={homee}>
+
+</Route> */}
 </Switch>
 
     

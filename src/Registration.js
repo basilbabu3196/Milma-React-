@@ -3,6 +3,7 @@ import milmaService from './service/dataservice'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useHistory} from  'react-router-dom'
 import logo from'./Cow-Logo.jpg'
+import Ome from './ome'
 import {BrowserRouter,
 Switch,
 Route,
@@ -68,44 +69,41 @@ const usernameChange=(event)=>{
             alert(error.response.data1.message)
         })
     }
-    return<center> <div className="card" >
-            <ul>
-  <li><Link to="/LoginFunction">LOGIN</Link>&nbsp;</li>&nbsp;&nbsp;&nbsp;
-  <li><Link to="/Registration">SIGN UP</Link>&nbsp;</li>
-  {/* <li><Link to="/home"> home</Link>&nbsp;</li> */}
-  
-</ul>
-  
-    <div className="card-header1"> 
-    <h1 ><img src={logo} height="10%" width="10%"></img>MIK-SO</h1> 
+    return<div><Ome></Ome>
+            
+         
+            
+    <center>
+   
+    <div className="spa">
     
-    <h1 className="text-primary">SIGN UP</h1></div>
-     
     
-     <div class="card-body">
+  <div class="carde">
+      <h1 >SiGn UP</h1><br></br>
      <form onSubmit={handleSubmit}>
      <div class="container">
      <div class="row">
 <div class="col">
-<p class="font-weight-normal"> MOBILE NUMBER/EMAIL ID  </p>
+<p class="font-weight-normal"> USERNAME  </p>
       </div>
-<div class="col"> <input onChange={phoneChange} class="form-control" type="text"></input><br></br></div>
+<div class="col"> <input onChange={phoneChange} class="form-control" type="text" placeholder="Mobile/Email"></input><br></br></div>
 </div>
 <div class="row">
 <div class="col">   SOCIETY OWNER_NAME  </div>
-<div class="col"><input onChange={usernameChange} class="form-control" type="text"></input><br></br></div></div>
+<div class="col"><input onChange={usernameChange} class="form-control" type="text" placeholder="Name"></input><br></br></div></div>
 <div class="row">
 <div class="col">   SOCIETY ADDRESS </div>
-<div class="col"><textarea onChange={addressChange} class="form-control" type="text"></textarea><br></br></div></div>
+<div class="col"><textarea onChange={addressChange} class="form-control" type="text" placeholder="Address,Place"></textarea><br></br></div></div>
 <div class="row">
-<div class="col"> NEW PASSWORD</div>
-<div class="col">   <input onChange={passwordChange} class="form-control" type="password"></input><br></br><br></br></div></div>
-<div class="row"> <div class="col-sm"></div> <div class="col">  <button class="btn btn-success" onClick={handleSubmit} type="submit">Register</button>&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Cancel" class="btn btn-secondary"></input>
+<div class="col"> PASSWORD</div>
+<div class="col">   <input onChange={passwordChange} class="form-control" type="password" min="6" placeholder="New Password-Least 6 character"></input><br></br><br></br></div></div>
+<div class="row"> <div class="col-sm"></div> <div class="col">  <button class="btn btn-success" onClick={handleSubmit} type="submit">Sign Up</button>&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Cancel" class="btn btn-secondary"></input>
 </div> </div> 
  </div>  </form>
      </div>
      </div>
    
      </center>
+     </div>
 }
 export default Registration;

@@ -54,7 +54,7 @@ const testChange=(event)=>{
               alert(error.response.data.message)
           })
       }
-      return<div><Home></Home><center> <div className="card" >
+      return<div><Home></Home><center> <div className="spa"><div className="card" >
              
               
       <div className="card-header"> <h1> PURCHASE</h1></div>
@@ -83,7 +83,7 @@ const testChange=(event)=>{
   </div>
   <div class="row">
   <div class="col">  TOTAL AMOUNT </div>
-  <div class="col"><input onChange={amountChange} class="form-control" value={qnt*50} type="text"></input><br></br></div></div>
+  <div class="col"><input onChange={amountChange} class="form-control"  type="text"></input><br></br></div></div>
   
   <div class="row"> <div class="col-sm"></div> <div class="col">  <button class="btn btn-success" onClick={handleSubmit} type="submit">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Cancel" class="btn btn-secondary"></input>
   </div> </div> 
@@ -91,7 +91,9 @@ const testChange=(event)=>{
        </div>
        </div>
        {/*(fetch display) https://www.positronx.io/react-axios-tutorial-make-http-get-post-requests/ */}
+       </div>
        </center>
+       
        </div>
   }
   export default purchase;

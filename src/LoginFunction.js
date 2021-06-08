@@ -1,4 +1,4 @@
-
+import Ome from './ome'
 import React, {useState} from 'react';
 import logo from'./Cow-Logo.jpg'
 import milmaService from './service/dataservice'
@@ -43,30 +43,21 @@ function LoginFunctions() {
                 history.push("/home")
             })
             .catch(error=>{
-                alert(error.response.data.message)
+                alert(error)
             })
             
         }
-        return<center><div className="card-header1">
-        
-        <ul>
-    <li><Link to="/LoginFunction">LOGIN</Link>&nbsp;</li>&nbsp;&nbsp;&nbsp;
-    <li><Link to="/Registration">SIGN UP</Link>&nbsp;</li>
-    <li><Link to="/demo">demo</Link>&nbsp;</li>
-    {/* <li><Link to="/home"> home</Link>&nbsp;</li> */}
-    
-    </ul>
-    <h1><img src={logo} height="10%" width="10%"></img>MIK-SO</h1>  
-        <h1 className="text-primary">LOGIN</h1>
-    
-    </div>
-        {/* {
-            names.map(name=><h1>{name}</h1>)
-        } */}
-        {/* <Sample name="User1" a="User1"/>
-        <Sample name="User2"/>
-        <Sample name="User3"/>
-        */} <div class="card-body"> 
+        return <div><Ome></Ome>
+            
+         
+            
+            <center>
+           
+            <div className="spa">
+            
+       
+        <div class="carde"> 
+        <h1>LOGIN</h1><br></br>
         <form method="post" onSubmit={handleSubmit}>
         <div class="container">
         <div class="row">
@@ -78,7 +69,7 @@ function LoginFunctions() {
                 <div class="row">
     <div class="col">
             PASSWORD</div>
-            <div class="col"><input onChange={passwordChange} required type="password" class="form-control" placeholder="LEAST 6 CHARCTER"></input>
+            <div class="col"><input onChange={passwordChange} required type="password" class="form-control" min="6" placeholder="Password"></input>
             </div></div><br></br>
             <div class="row">
     <div class="col"></div> <div class="col"> <button class="btn btn-primary" onClick={handleSubmit} type="submit">LOGIN</button>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -87,7 +78,8 @@ function LoginFunctions() {
         </form>
         </div>
         
-
+        </div>
         </center>
+        </div>
 }
 export default LoginFunctions;

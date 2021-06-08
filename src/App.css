@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #c9c9c9;
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -37,90 +37,10 @@
   }
 }
 
-.navba
-{
-  float: right;
-}
-.card-body
-{
-  background-color: rgba(233, 233, 233, 0.582);
-}
-.lin{
-color: rgb(185, 233, 229);
-font-weight: bold;
-}
-.out{
-  align-items: right;
-}
-.ul1
-{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  border: 1px solid #e7e7e7;
-  background-color: #f3f3f3;
-}
-.li1
-{
 
-  float: right;
-}
-.nav1
-{
-    width: 100%;
-    display: block;
-    color: rgb(41, 39, 39);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  
-}
-.nav1:hover
-{
-  padding: 14px 16px;
-  background-color: #ddd;
-}
 
-.nav1:active {
-  padding: 14px 16px;
-  color: rgb(53, 10, 109);
-  background-color: #4CAF50;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 14px 20px;
-  overflow: hidden;
-  background-color: rgb(245, 245, 245);
-}
-
-li {
-  float: right;
-}
-
-li a {
-  display: block;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: rgb(32, 118, 199);
-  color: aliceblue;
-}
 body{
-  background-image: url("cow1.jpg");
+  background-image: url("new.jpg");
 }
-.card-header1
-{
-  background: white;
-}
-.milma
-{
-  font-size: x-large;
-  font-family: 'Courier New', Courier, monospace;
-  float: left;
-}
+
+
